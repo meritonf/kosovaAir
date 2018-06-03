@@ -1,0 +1,280 @@
+
+#test div
+{	position:relative;
+	width:80%;
+	height:60%;
+	align:center;
+	transform:translateX(100%);
+	animation: test 10s linear infinite;
+	float:left;
+	margin-left:-70%;
+	vertical-align:center;
+}
+
+@keyframes test
+{
+0%   {background-image:url(../Images/4.jpg);left:0px;top:0px;}
+20%  {background-image:url(../Images/9.jpg);left:0px;top:0px;}
+40%  {background-image:url(../Images/5.jpg);left:0px;top:0px;}
+100%  {background-image:url(../Images/2.jpg);left:0px;top:0px;}
+}
+#test div:hover{
+		-webkit-animation-play-state: paused;
+		animation-play-state: paused;
+		border-radius: 10%;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin:0px; 
+}
+html {
+        font-family: "helvetica neue", sans-serif;
+}
+
+/*------------------------ Navigation bar/menu fillon ketu ---------------------*/
+
+nav {
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid violet;
+    text-align: right;
+    height: 60px;
+    line-height: 70px;
+z-index:33;
+}
+.menu {
+    margin: 0 30px 0 0;
+}
+.menu a {
+    font-weight: normal;
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+}
+.menu a:hover {
+    text-shadow: 0 0 20px dodgerblue;
+    transition: all 0.6s ease;
+}
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+/*----------------------Media Queries Per Navigation Bar------------------------*/
+
+@media only screen and (max-width: 900px)
+{
+    nav{
+        background: white;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        
+    }    
+    .menu a {
+        position: relative;
+        border-bottom: 1px solid #eaeaeb;
+        background-color: white;
+        display: block;
+    }
+    #toggle:checked + .menu {
+        
+        display: block;
+    }
+    
+}
+.navbar-logo {
+    max-height: 43px;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    background: url(../Images/logo.png) 0 0 no-repeat; /*Fotoja e logos*/
+    background-size: 90%; /*Madhesia e fotos*/
+    background-position: center;
+    width:250px;/*Gjeresia e bllokut*/
+    height:60px;/*Gjatesia e bllokut*/
+    float: left;
+    display: block;
+}
+
+/*---------------------- Stilizime te Perdorura ne faqe------------------------*/
+
+.alert 
+{
+    background-color: darkslategray;
+    color:white;
+    margin-bottom: 0px;
+    border: 1px solid black;
+    height: 50px;
+}
+.fotoja-kryesore 
+{
+    background-image: url("../Images/test10.jpg"); /*Fotoja e pare e kryefaqes*/
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+.rrethnesh
+{
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    color: #10008;
+    background-color: white;
+}
+
+.gradient{
+    margin: 0px auto;
+    width: 55%;
+    overflow: hidden;
+    background-color:rgb(47, 79, 79);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: linear-gradient(to right,#2F4F4F,#708090)
+}
+.gradient tr{
+border: 1px solid #000000;
+}
+.gradient th, .gradient td {
+    text-align: center;
+    margin: 11em 1em;
+}
+#bllok2
+{
+    background: url(../Images/funkydivider.png); 
+    margin: -3.1em 0 ;
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    display: block;
+}
+.whitespace
+{
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    display: block;
+}
+br
+{
+    margin: 0 0 30px 0;
+}
+tab
+{
+    margin: 0 100px 0 0;
+}
+adv
+{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width:100%;
+    margin: 0px;
+    background:#E6E6FA;
+}
+.gallery{
+    margin:0px;
+    padding: 0px;
+    width:20%;
+}
+.gallery img{
+    width:100%;
+    margin:	0px;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+mark { 
+    background-color:#F5DEB3;
+    color: black;
+}
+
+
+/*-----------------------Tabelat per qmim fillojne ketu------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+.wrapPrice
+{
+    margin: 0px 0px 500px 0px;
+}
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 15px;
+    background-color: white;
+
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.buttonPriceTable {
+    background-color: purple;
+    border:1px solid #29668f;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:16px;
+    padding:13px 45px;
+    text-decoration:none;
+    width:100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}

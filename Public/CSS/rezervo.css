@@ -1,0 +1,162 @@
+.rezervimMbajtesi
+{
+    display: inline-block;
+    margin: 6em 0 0 5em;
+    width: 32em;
+
+}
+.rezervimMbajtesi table
+{
+    width: 100%;
+    height: 70%;
+}
+input,
+textarea {
+    padding: 5px;
+    font-family: Verdana,Arial,  sans-serif;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.rezervimMbajtesi select{
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 35px 6px 12px;
+    vertical-align: middle;
+    white-space: nowrap;
+    min-width: 90%;
+}
+.rezervimMbajtesi .button {
+	display: inline-block;
+	outline: none;
+	*zoom: 1;
+	text-align: center;
+	text-decoration: none;
+	font-family: inherit;
+	font-weight: 300;
+	letter-spacing: 1px;
+	vertical-align: middle;
+	border: 1px solid;
+	transition: all 0.2s ease;
+	box-sizing: border-box;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+        font-size: 0.9375em;
+	padding: 0.5375em 1.375em;
+        color: #4682B4;
+	border-color: #4682B4;
+        width:100%;
+        margin-top: 8px;
+        cursor: pointer;
+}
+.rezervimMbajtesi .button:hover {
+  background: #4682B4;
+  color: #fff;
+  border-color: #4682B4;		
+}
+.rezervimMbajtesi h1 {
+    background: url(../Images/sparkle_purple.gif) 0 0 no-repeat;
+    background-position: center;
+    background-size: 160px;
+}
+.rezervimMbajtesi .rezervimi
+{
+	border: 1px solid black;
+        margin-left: 1em;
+	background: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+        width: 30em;
+}
+.rezervimMbajtesi .dividertop
+{
+    background: url(../Images/dividertop.png);
+    margin-bottom: -1em;
+    background-size: 100%;
+    height: 30px;
+    background-repeat: no-repeat;
+    display: block;
+}
+.rezervimMbajtesi .dividerbottom
+{
+    background: url(../Images/dividerbottom.png);
+    margin-top: -1em;
+    background-size: 100%;
+    height: 30px;
+    background-repeat: no-repeat;
+    display: block;
+}
+/* Hide the toggle checkbox */
+#expand-toggle {
+  display: none;
+}
+.rezervimMbajtesi tr{
+    color: white;
+}
+/* Hide expandable content by default */
+.rezervimMbajtesi .fluturim {
+  visibility: collapse;
+  
+}
+.rezervimMbajtesi .kthim {
+visibility: collapse;
+}
+/* Style the button */
+.rezervimMbajtesi #expand-btn , #expandd-btn {
+	display: inline-block;
+	outline: none;
+	*zoom: 1;
+	text-align: center;
+	text-decoration: none;
+	font-family: inherit;
+	font-weight: 300;
+	letter-spacing: 1px;
+	vertical-align: middle;
+	border: 1px solid;
+	transition: all 0.2s ease;
+	box-sizing: border-box;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+        font-size: 0.9375em;
+	padding: 0.5375em 1.375em;
+        color: #4682B4;
+	border-color: #4682B4;
+        width:100%;
+        margin-top: 8px;
+        background: white;
+}
+.rezervimMbajtesi #expand-btn:hover , #expandd-btn:hover {
+      background: #4682B4;
+  color: #fff;
+  border-color: #4682B4;	
+}
+.rezervimMbajtesi .rezervimi{
+border: 1px solid black;
+display: inline-block;
+padding-bottom: 20px;
+}
+
+
+.rezervimMbajtesi #fluturim:not(:checked) ~ * .fluturim {
+  visibility: visible;
+}
+.rezervimMbajtesi #dydrejtime:checked ~ * .kthim {
+  visibility: visible;
+  transition: ease 1s;
+}
+.rezervimMbajtesi label{
+cursor: pointer;
+}
+.rezervimMbajtesi #fluturim , #hotel , #njedrejtim , #dydrejtime
+{
+display: none;
+}
+/*
+.rezervimMbajtesi #fluturim:checked ~ #expand-btn {
+}
+.rezervimMbajtesi #njedrejtim:checked ~ #expandd-btn {
+}*/

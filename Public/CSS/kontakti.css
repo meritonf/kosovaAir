@@ -1,0 +1,44 @@
+body{
+ background: url(../Images/test10.jpg) repeat;
+background-attachment: fixed;
+background-height:100%;
+}
+div.kutiatransparente {
+margin-top:50px;
+margin-right:auto;
+margin-bottom:30px;
+margin-left:50px;
+    padding: 10px 50px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius:25px;
+background-color:rgba(255,255,255,0.8);
+}
+.fotoja img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+padding:10px;
+font-weight: bold;
+color: #000000;
+text-indent: 50px;
+letter-spacing: 2px;
+}
+h1 {
+    text-align: left;
+font-size:20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+	h2 {
+    text-align: left;
+    color: #000000;
+}
+footer p {
+color:white;
+  background-color:no color;
+
+}

@@ -1,0 +1,141 @@
+header{
+z-index:1;
+height:100px;
+width:97%;
+position:fixed;
+top:0;left:0;right:0;
+
+}
+body {
+    margin: 0px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 600;
+    background: url(../Images/test10.jpg) 0 0 no-repeat;
+    background-attachment: fixed;
+    background-height: 100%; 
+}
+div.kutiatransparente {
+margin-top:50px;
+margin-right:auto;
+margin-bottom:30px;
+margin-left:50px;
+    padding: 10px 50px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius:25px;
+background-color:rgba(255,255,255,0.8);
+}
+#multiplebackground {
+    background-image:url(../Images/air.gif),url(../Images/paper1.jpg);
+    background-position: center, right top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+#video{
+     position: relative;
+     right: - 35px;
+}
+.fakte{
+  -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; 
+    -moz-column-rule-style: solid;
+    column-rule-style: solid;
+    -webkit-column-rule-width: 1px;
+    -moz-column-rule-width: 1px;
+    column-rule-width: 1px;
+}
+h1 {
+    text-align:left;
+    font-size:17px;
+    text-transform: uppercase;
+    color: #000000;
+}
+	h3 {
+    text-align: left;
+    color: #000000;
+}
+.tekst {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden; 
+    border: 1px solid #000000;
+}
+.transf2d
+{float:right;
+transform:rotate(20deg);
+width:150px;
+height:140px;
+background-color:#000000;
+display: inline; 
+color: white;
+}
+.transformim2d
+{float:right;
+transform:translate(50px,50px);
+width:150px;
+height:140px;
+background-color:#000000;
+display: inline; 
+color: white;
+}
+.transf3d
+{float:right;
+transform:rotateY(130deg);
+width:150px;
+height:140px;
+background-color:#000000;
+display: inline; 
+color: white;
+}
+.transf3dx
+{float:right;
+transform:rotateX(60deg);
+width:150px;
+height:140px;
+background-color:#000000;
+display: inline; 
+color: white;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonti/Roboto-Regular.ttf);
+}
+
+.fontface {
+    font-family: myFirstFont;
+}
+.tekst:hover {
+    text-overflow: inherit;
+    overflow: visible;
+}
+p.textwrap{
+width:9em; 
+ margin: 20px;
+border:2px solid #000000;
+text-wrap:normal;
+outline: 2px solid darkmagenta;
+outline-offset: 10px;
+}
+ul.a{
+	list-style-type:circle;
+}
+ul.b{
+	list-style-type:square;
+}
+ol.c{
+	list-style-type:upper-roman;
+}
+ol.d{
+	list-style-type:lower-alpha;
+}
+footer p {
+color:white;
+  background-color:no color;
+
+}

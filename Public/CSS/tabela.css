@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 600;
+    background: url(../Images/test10.jpg) 0 0 no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 200%;
+}
+
+.tabela {
+    margin: 50px 50px 50px 50px;
+    width: 91%;
+    overflow: hidden;
+    background-color:rgba(255, 255, 255, 0.7);
+    color: #024457;
+    border: 6px solid darkmagenta;
+}
+.tabela tr {
+	
+    border: 1px solid #D9E4E6;
+}
+.tabela tr:hover{
+    background-color: purple;
+    font-weight: italic;
+    color: white;
+}
+.tabela th {
+    display: none;
+    border: 1px solid #FFF;
+    background-color: purple;
+    color: #FFF;
+height:70px;
+ 
+}
+.tabela td {
+    display: block;
+    word-wrap: break-word;
+    
+}
+@media (min-width: 480px) {
+    .tabela td {
+        border: 1px solid #D9E4E6;
+    }
+}
+.tabela th, .tabela td {
+    text-align: center;
+    margin: .5em 1em;
+}
+@media (min-width: 480px) {
+    .tabela th, .tabela td {
+        display: table-cell;
+       
+    }
+}
+
